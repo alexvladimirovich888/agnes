@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <!-- VEX: Clean Transparent Minimalist Portfolio & Market Entity -->
+  <polygon points="60,14 102,38 102,82 60,106 18,82 18,38" stroke="#f59e0b" stroke-width="3.5" stroke-linejoin="round" fill="none"/>
+  <polygon points="60,28 88,44 88,76 60,92 32,76 32,44" stroke="#d97706" stroke-width="2" stroke-linejoin="round" stroke-dasharray="3 3" fill="none"/>
+  <line x1="60" y1="14" x2="60" y2="106" stroke="#fbbf24" stroke-width="1.5" stroke-opacity="0.6"/>
+  <line x1="18" y1="38" x2="102" y2="82" stroke="#fbbf24" stroke-width="1.5" stroke-opacity="0.6"/>
+  <line x1="18" y1="82" x2="102" y2="38" stroke="#fbbf24" stroke-width="1.5" stroke-opacity="0.6"/>
+  <circle cx="60" cy="60" r="7" fill="#fbbf24"/>
+  <circle cx="60" cy="60" r="14" stroke="#f59e0b" stroke-width="1.5" stroke-opacity="0.8"/>
+</svg>

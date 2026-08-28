@@ -1,0 +1,6 @@
+{
+  "name": "OpenBots",
+  "description": "An open-source agent-native AI platform powered by Agnes 2.5 Pro. Run locally or online with autonomous agent workflows and tools.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
