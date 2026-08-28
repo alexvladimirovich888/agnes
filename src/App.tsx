@@ -129,7 +129,11 @@ export default function App() {
 
       if (!response.ok) {
         const errData = await response.json().catch(() => ({}));
-        throw new Error(errData.error || 'Something went wrong. Try again.');
+        let message = errData.error || 'Something went wrong. Try again.';
+        if (errData.details) {
+          message += `\n\n💡 ${errData.details}`;
+        }
+        throw new Error(message);
       }
 
       const data = await response.json();
