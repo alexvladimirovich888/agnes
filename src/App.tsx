@@ -12,11 +12,18 @@ export default function App() {
   // Load agents from storage or use default 4 agents
   const [agents, setAgents] = useState<AgentConfig[]>(() => {
     try {
-      const saved = localStorage.getItem('openbots_agents_v8_clean_avatars');
+      const saved = localStorage.getItem('openbots_agents_v9_uploaded_assets');
       if (saved) {
         const parsed = JSON.parse(saved);
         if (Array.isArray(parsed) && parsed.some(a => a.id === 'vex' || a.id === 'byte')) {
-          return parsed;
+          // Merge avatarUrl if missing
+          return parsed.map((p: AgentConfig) => {
+            const init = INITIAL_AGENTS.find(a => a.id === p.id);
+            return {
+              ...p,
+              avatarUrl: init?.avatarUrl || p.avatarUrl
+            };
+          });
         }
       }
     } catch (e) {
@@ -48,7 +55,7 @@ export default function App() {
   // Persist agents
   useEffect(() => {
     try {
-      localStorage.setItem('openbots_agents_v8_clean_avatars', JSON.stringify(agents));
+      localStorage.setItem('openbots_agents_v9_uploaded_assets', JSON.stringify(agents));
     } catch (e) {
       console.warn('Could not save agents to localStorage', e);
     }

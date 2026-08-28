@@ -28,18 +28,18 @@ export const AgentAvatar: React.FC<AgentAvatarProps> = ({
 
   // Determine avatar image path
   const defaultAvatars: Record<string, string> = {
-    portfolio: '/avatars/vex.svg',
-    coder: '/avatars/byte.svg',
-    researcher: '/avatars/pulse.svg',
-    forge: '/avatars/morph.svg',
-    custom: '/avatars/morph.svg',
-    vex: '/avatars/vex.svg',
-    byte: '/avatars/byte.svg',
-    pulse: '/avatars/pulse.svg',
-    morph: '/avatars/morph.svg'
+    portfolio: '/avatars/Asset%206redagentv2agent.png',
+    coder: '/avatars/Asset%203greenagent.png',
+    researcher: '/avatars/Asset%204blueagent.png',
+    forge: '/avatars/Asset%205customagent.png',
+    custom: '/avatars/Asset%205customagent.png',
+    vex: '/avatars/Asset%206redagentv2agent.png',
+    byte: '/avatars/Asset%203greenagent.png',
+    pulse: '/avatars/Asset%204blueagent.png',
+    morph: '/avatars/Asset%205customagent.png'
   };
 
-  const imageSrc = avatarUrl || defaultAvatars[type] || '/avatars/vex.svg';
+  const imageSrc = avatarUrl || defaultAvatars[type] || '/avatars/Asset%206redagentv2agent.png';
 
   return (
     <div
